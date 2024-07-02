@@ -1,0 +1,53 @@
+<form [formGroup]="productForm" novalidate (ngSubmit)="onSubmit()">
+  <mat-card class="shipping-card">
+    <mat-card-header>
+      <mat-card-title style="margin: 20px 0">Modificar un nuevo producto</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="row">
+        <div class="col">
+          <mat-form-field appearance="outline" class="full-width">
+            <input matInput placeholder="Nombre" formControlName="nombre">
+            @if (productForm.controls['nombre'].hasError('required') && again == false) {
+            <mat-error>El nombre es <strong>requerido</strong></mat-error>
+            }
+          </mat-form-field>
+        </div>
+        <div class="col">
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-select [(ngModel)]="p.categoria" placeholder=" Categoría" formControlName="categoria">
+              @for (categoria of categorias; track categoria) {
+              <mat-option [value]="categoria">{{ categoria }}</mat-option>
+              }
+            </mat-select>
+            @if (productForm.controls['categoria'].hasError('required') && again == false) {
+            <mat-error>La categoria es <strong>requerida</strong></mat-error>
+            }
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <mat-form-field style="margin-top: 10px;" appearance="outline" class="full-width">
+            <input matInput type="number" placeholder="Precio" formControlName="precio">
+            @if (productForm.controls['precio'].hasError('required') && again == false) {
+            <mat-error>El precio es <strong>requerido</strong></mat-error>
+            }
+          </mat-form-field>
+        </div>
+        <div class="col">
+          <mat-form-field style="margin-top: 10px;" appearance="outline" class="full-width">
+            <input matInput type="number" placeholder="Cantidad" formControlName="cantidad">
+            @if (productForm.controls['cantidad'].hasError('required') && again == false) {
+            <mat-error>La cantidad es <strong>requerida</strong></mat-error>
+            }
+          </mat-form-field>
+        </div>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button style="margin: 10px;" [disabled]="productForm.invalid" mat-flat-button color="secondary"
+        type="submit">Modificar</button>
+    </mat-card-actions>
+  </mat-card>
+</form>
