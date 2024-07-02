@@ -9,6 +9,7 @@ import { MatCardModule } from '@angular/material/card';
 import Product from '../../../models/product.model';
 
 import { ProductServiceService } from '../services/product.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-new-product-form',
@@ -31,7 +32,7 @@ export class NewProductFormComponent {
 
   again: Boolean = true;
 
-  constructor(fb: FormBuilder, private prodSer: ProductServiceService) {
+  constructor(fb: FormBuilder, private prodSer: ProductServiceService, private router: Router) {
     this.productForm = fb.group({
       nombre: [null, Validators.required],
       categoria: [null, Validators.required],
@@ -61,7 +62,7 @@ export class NewProductFormComponent {
       (response) => {
         console.log('Datos enviados:', response);
         alert('Producto Registrado!')
-        this.reset();
+        this.router.navigateByUrl('/products-list');
       },
       (error) => {
         console.error('Error al enviar los datos:', error);
