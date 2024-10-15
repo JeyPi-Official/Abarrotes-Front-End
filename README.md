@@ -1,7 +1,7 @@
-# Abarrotes Frontend
+# Abarrotes Front-End
 
 ## Overview
-Abarrotes Frontend is an Angular-based web application designed for managing inventory and sales for a grocery store. The app provides tools for handling daily transactions and stock management in an efficient and user-friendly interface.
+Abarrotes Front-End is an Angular-based web application designed for managing inventory and sales for a grocery store. The app provides tools for handling daily transactions and stock management in an efficient and user-friendly interface.
 
 ## Features
 - Developed with Angular.
@@ -11,7 +11,7 @@ Abarrotes Frontend is an Angular-based web application designed for managing inv
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/JeyPi-Official/Abarrotes-Frontend.git
+   git clone https://github.com/JeyPi-Official/Abarrotes-Front-End.git
    ```
 2. Install dependencies:
    ```bash
