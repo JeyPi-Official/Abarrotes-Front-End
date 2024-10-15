@@ -1,27 +1,26 @@
-# AbarrotesFrontend
+# Abarrotes Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0-rc.0.
+## Overview
+Abarrotes Frontend is an Angular-based web application designed for managing inventory and sales for a grocery store. The app provides tools for handling daily transactions and stock management in an efficient and user-friendly interface.
 
-## Development server
+## Features
+- Developed with Angular.
+- Inventory and sales management system.
+- Real-time updates and data management.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/JeyPi-Official/Abarrotes-Frontend.git
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   ng serve
+   ```
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## License
+No license information provided.
